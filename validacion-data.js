@@ -26,8 +26,8 @@ const VAL = {
    "caso": "A-01, K-01, A-02",
    "nodo": "N0 → N1",
    "sev": "Crítica",
-   "desc": "En el chat web el bot no responde el primer mensaje de la persona (4 de 4 conversaciones, incluido «Estoy en peligro»). Se queda «escribiendo» más de un minuto; una vez mostró el error del servidor «'NoneType' object has no attribute 'search'». Bloquea todo el flujo: no se llega a N1 ni a E1, y no se muestra el 123.",
-   "evid": "Chat web de pruebas, conversaciones 1 a 4 del 26-nov",
+   "desc": "En el chat web el bot no responde el primer mensaje de la persona (5 de 5 conversaciones, incluido «Estoy en peligro»; la última, el 26-nov a las 2:07 p. m.). Se queda «escribiendo» más de un minuto; una vez mostró el error del servidor «'NoneType' object has no attribute 'search'». Bloquea todo el flujo: no se llega a N1 ni a E1, y no se muestra el 123.",
+   "evid": "Chat web de pruebas, conversaciones 1 a 5 del 26-nov",
    "estado": "Abierto"
   },
   {
@@ -45,7 +45,7 @@ const VAL = {
    "nodo": "N0",
    "sev": "Media",
    "desc": "La bienvenida del chat web no es el texto del árbol: no menciona la Línea 155, agrega un emoji y termina con una pregunta abierta («¿En qué le podemos orientar hoy?») en lugar de pasar a la pregunta de seguridad N1 con sus botones.",
-   "evid": "Chat web, conversaciones 1 a 3",
+   "evid": "Chat web, conversaciones 1 a 3 y 5 (sigue igual a las 2:07 p. m.)",
    "estado": "Abierto"
   },
   {
@@ -222,7 +222,7 @@ const VAL = {
   ]
  ],
  "recomendaciones": [
-  "Corregir de inmediato los 3 defectos críticos: DEF-003 (el chat web no responde), DEF-004 (SALIR envía una encuesta en el chat web) y DEF-008 (emergencia sin agente termina en «intente más tarde»). Luego repetir las pruebas por canal.",
+  "Corregir de inmediato los 3 defectos críticos: DEF-003 (el chat web no responde; confirmado otra vez a las 2:07 p. m.), DEF-004 (SALIR envía una encuesta en el chat web) y DEF-008 (emergencia sin agente termina en «intente más tarde»). Luego repetir las pruebas por canal.",
   "Aprobar el v0.6 como flujo de referencia y llevar sus cambios al Excel del árbol (v0.4).",
   "Completar el v0.6 con X1, las reglas globales, la lista numerada de E1 y la pregunta de seguridad en N11a.",
   "Corregir el bot: DEF-001 (pregunta extra en E1), DEF-002 (tildes), DEF-005 (bienvenida), DEF-006 (registro previo), DEF-007 (textos en inglés), DEF-009 (preguntas repetidas de violencia sexual), DEF-010 (R0a sin información), DEF-011 (proceso v0.6) y DEF-012 (SALIR inconsistente).",
@@ -518,6 +518,12 @@ const VAL = {
    "26-nov-2026",
    "Prueba en el chatbot virtual (chat web de pruebas, testpublic.agentiabpm.com)",
    "4 conversaciones: el bot saluda pero no responde ningún mensaje (ni «Estoy en peligro»); una vez mostró un error del servidor. SALIR envía una encuesta. Defectos DEF-003 a DEF-007.",
+   "Falla"
+  ],
+  [
+   "26-nov-2026",
+   "Nueva prueba del chat web (2:07 p. m.)",
+   "Conversación 5: registro correcto y saludo, pero el bot no responde «Hola buenas tardes» ni «Necesito orientación» en más de 90 s. DEF-003 sigue abierto; la bienvenida sigue sin el texto del árbol (DEF-005).",
    "Falla"
   ],
   [
