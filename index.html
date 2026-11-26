@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SALVIA · Pruebas del chatbot</title>
+  <link rel="icon" href="logo-flor.png">
+  <link rel="stylesheet" href="styles.css?v=1795714539">
+</head>
+<body>
+  <header class="topbar">
+    <img src="logo-salvia.png" alt="SALVIA" class="logo">
+    <div class="titulo">
+      <h1>Pruebas del chatbot</h1>
+      <p>Centro de Monitoreo · Ciclo de pruebas del árbol de decisión</p>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-view="ejecutar">Ejecutar prueba</button>
+      <button class="tab" data-view="validacion">Validación del bot</button>
+      <button class="tab" data-view="historial">Historial</button>
+      <button class="tab" data-view="cobertura">Cobertura</button>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Cerrar">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="logo-data.js?v=202611260502"></script>
+  <script src="data.js?v=202611260502"></script>
+  <script src="cases.js?v=202611260502"></script>
+  <script src="flow.js?v=202611260502"></script>
+  <script src="diagram.js?v=202611260502"></script>
+  <script src="db.js?v=202611260502"></script>
+  <script src="seed.js?v=202611260502"></script>
+  <script src="validacion-data.js?v=202611260502"></script>
+  <script src="validacion.js?v=202611260502"></script>
+  <script src="app.js?v=1795714539"></script>
+</body>
+</html>
